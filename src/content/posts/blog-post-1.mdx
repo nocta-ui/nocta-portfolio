@@ -1,0 +1,180 @@
+---
+title: "MDX Showcase: Everything You Can Render"
+date: "2025-11-22"
+excerpt: "A comprehensive demo of MDX capabilities in TanStack Start — from basic markdown to interactive React components, code blocks, and custom elements."
+tags:
+  - mdx
+  - tanstack-start
+  - react
+  - markdown
+---
+
+# MDX Capabilities Demo
+
+This post demonstrates all the rendering capabilities available in this TanStack Start blog template using MDX.
+
+## Basic Markdown Elements
+
+MDX supports all standard markdown syntax. Here's a quick overview:
+
+### Text Formatting
+
+You can use **bold text**, *italic text*, ***bold and italic***, ~~strikethrough~~, and `inline code`.
+
+### Links and Images
+
+[External links work](https://nocta-ui.com) as expected.
+
+Images can be embedded with standard markdown syntax:
+
+![Alt text](/placeholder-1.jpg)
+
+
+### Lists
+
+Unordered lists:
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+
+Ordered lists:
+1. First step
+2. Second step
+3. Third step
+   1. Substep A
+   2. Substep B
+
+Task lists:
+- [x] Completed task
+- [ ] Pending task
+- [ ] Another pending task
+
+### Blockquotes
+
+> This is a blockquote. It can span multiple lines and is great for highlighting important information or quotes from other sources.
+>
+> You can even have multiple paragraphs within a blockquote.
+
+Nested blockquotes:
+
+> First level
+> > Second level
+> > > Third level
+
+## Code Blocks
+
+### TypeScript with Syntax Highlighting
+
+```typescript
+interface User {
+  id: string
+  name: string
+  email: string
+  createdAt: Date
+}
+
+const createUser = async (data: Omit<User, 'id' | 'createdAt'>): Promise<User> => {
+  return {
+    ...data,
+    id: crypto.randomUUID(),
+    createdAt: new Date(),
+  }
+}
+```
+
+### CSS Example
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+```
+
+### JSON Data
+
+```json
+{
+  "name": "my-tanstack-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tanstack/react-router": "^1.0.0",
+    "react": "^18.2.0",
+    "mdx": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
+```
+
+### Shell Commands
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### SQL Query
+
+```sql
+SELECT 
+  users.id,
+  users.name,
+  COUNT(posts.id) as post_count
+FROM users
+LEFT JOIN posts ON users.id = posts.user_id
+WHERE users.created_at > '2024-01-01'
+GROUP BY users.id, users.name
+HAVING post_count > 5
+ORDER BY post_count DESC
+LIMIT 10;
+```
+
+## Tables
+
+Simple table:
+
+| Feature | Supported | Notes |
+|---------|-----------|-------|
+| Markdown | ✅ | Full support |
+| JSX | ✅ | React components |
+| Syntax highlighting | ✅ | Multiple languages |
+
+## Horizontal Rules
+
+You can separate content with horizontal rules:
+
+---
+
+## Conclusion
+
+This MDX template supports a wide range of content types, from basic markdown to complex nested structures and inline JSX. You can combine all these elements to create rich, interactive blog posts and documentation.
+
+The flexibility of MDX means you can start with simple markdown and progressively enhance with React components as needed.

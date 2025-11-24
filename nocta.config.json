@@ -1,0 +1,19 @@
+{
+  "$schema": "https://nocta-ui.com/registry/config-schema.json",
+  "style": "default",
+  "tailwind": {
+    "css": "src/styles.css"
+  },
+  "aliases": {
+    "components": "src/components/ui",
+    "utils": "src/lib/utils"
+  },
+  "aliasPrefixes": {
+    "components": "@",
+    "utils": "@"
+  },
+  "workspace": {
+    "kind": "app",
+    "root": "."
+  }
+}

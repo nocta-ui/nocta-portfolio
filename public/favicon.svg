@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="470" height="469"><svg width="470" height="469" viewBox="0 0 470 469" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M235 0C255.102 0 274.61 2.53273 293.234 7.27087L372.083 175.875V44.0833C431.365 86.6542 470 156.055 470 234.5C470 364.011 364.787 469 235 469C214.89 469 195.377 466.452 176.747 461.71L97.9167 293.125V424.898C38.6406 382.326 0 312.941 0 234.5C0 104.989 105.213 0 235 0ZM235 97.7083C159.291 97.7083 97.9167 158.952 97.9167 234.5C97.9167 310.048 159.291 371.292 235 371.292C310.709 371.292 372.083 310.048 372.083 234.5C372.083 158.952 310.709 97.7083 235 97.7083Z" fill="white"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.1); } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

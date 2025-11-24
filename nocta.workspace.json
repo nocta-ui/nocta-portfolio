@@ -1,0 +1,12 @@
+{
+  "workspaces": [
+    {
+      "name": ".",
+      "kind": "app",
+      "root": ".",
+      "config": "nocta.config.json"
+    }
+  ],
+  "packageManager": "pnpm",
+  "repoRoot": "."
+}
