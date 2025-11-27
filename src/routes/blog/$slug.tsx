@@ -6,14 +6,14 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getBlogPostSeo, getRootSeo } from "@/lib/seo";
 import { blogPostQueryOptions } from "@/sections/blog/_queries/posts";
-import { getAllPostsMeta } from "@/sections/blog/_server/posts";
+import { getAllPostsMeta, type PostMeta } from "@/sections/blog/_server/posts";
 import Footer from "@/sections/footer/footer";
 import { Background } from "@/sections/hero/_components/background";
 
 export const Route = createFileRoute("/blog/$slug")({
 	loader: async ({ params }) => {
 		const all = await getAllPostsMeta();
-		const meta = all.find((p) => p.slug === params.slug);
+		const meta = all.find((p: PostMeta) => p.slug === params.slug);
 		if (!meta) throw notFound();
 		return meta;
 	},
