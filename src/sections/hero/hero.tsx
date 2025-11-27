@@ -64,6 +64,11 @@ export default function Hero() {
 			const hero = heroRef.current;
 			if (!hero) return;
 
+			gsap.set(
+      [badgeRef.current, titleRef.current, descriptionRef.current, actionsRef.current],
+      { autoAlpha: 1 }
+      );
+
 			const splits: SplitText[] = [];
 			context.add(() => {
 				splits.forEach((split) => {
@@ -169,26 +174,27 @@ export default function Hero() {
 	);
 
 	return (
-		/* biome-ignore lint/correctness/useUniqueElementIds: anchor target appears once */
 		<section
 			id="hero"
 			ref={heroRef}
 			className="relative flex h-[55vh] md:h-[50vh] w-full px-4 md:px-16 flex-col items-center justify-center gap-4"
 		>
 			<div className="relative z-10 flex flex-col items-center gap-2">
-				<div ref={badgeRef} className="w-fit">
+				<div style={{visibility: "hidden"}} ref={badgeRef} className="w-fit">
 					<ShinyBadge>
 						<FrameIcon aria-hidden="true" className="size-3.5" />
 						Your Role Here
 					</ShinyBadge>
 				</div>
 				<h1
+				  style={{visibility: "hidden"}}
 					ref={titleRef}
 					className="text-3xl text-center text-foreground font-medium text-balance max-w-3xl"
 				>
 					Add a headline that tells people what you design, build, or launch.
 				</h1>
 				<p
+		      style={{visibility: "hidden"}}
 					ref={descriptionRef}
 					className="text-base md:text-lg text-center text-foreground/70 font-medium text-balance leading-relaxed max-w-xl"
 				>
@@ -198,6 +204,7 @@ export default function Hero() {
 			</div>
 			<div ref={actionsRef} className="relative z-10  flex items-center gap-2">
 				<Button
+			    style={{visibility: "hidden"}}
 					variant="default"
 					size="md"
 					onClick={() => scrollTo("#contact")}
@@ -205,6 +212,7 @@ export default function Hero() {
 					Start a project
 				</Button>
 				<Button
+		      style={{visibility: "hidden"}}
 					variant="secondary"
 					size="md"
 					onClick={() => scrollTo("#works")}
