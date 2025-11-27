@@ -16,7 +16,7 @@ import {
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Icons } from "@/components/ui/icons";
+import { Icons } from "@/lib/icons";
 import { cn } from "@/lib/utils";
 
 declare module "@tanstack/react-table" {

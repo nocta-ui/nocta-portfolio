@@ -3,7 +3,7 @@
 import * as Ariakit from "@ariakit/react";
 import { cva, type VariantProps } from "class-variance-authority";
 import React, { createContext, useCallback, useContext, useMemo } from "react";
-import { Icons } from "@/components/ui/icons";
+import { Icons } from "@/lib/icons";
 import { cn } from "@/lib/utils";
 
 const accordionVariants = cva("w-full", {

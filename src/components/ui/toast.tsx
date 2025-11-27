@@ -9,7 +9,7 @@ import React, {
 	useRef,
 	useState,
 } from "react";
-import { Icons } from "@/components/ui/icons";
+import { Icons } from "@/lib/icons";
 import { cn } from "@/lib/utils";
 
 const POSITION_CONFIGS = {
