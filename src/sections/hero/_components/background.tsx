@@ -52,11 +52,11 @@ interface ShaderBackgroundProps {
 
 const COLOR_PRESETS = {
 	dark: {
-		shadow: [0.031, 0.035, 0.043] as const,
-		highlight: [0.055, 0.059, 0.071] as const,
+		shadow: [0.035, 0.035, 0.043] as const,
+		highlight: [0.055, 0.059, 0.075] as const,
 	},
 	light: {
-		shadow: [0.965, 0.965, 0.969] as const,
+		shadow: [0.98, 0.98, 0.988] as const,
 		highlight: [0.9, 0.9, 0.91] as const,
 	},
 } as const;

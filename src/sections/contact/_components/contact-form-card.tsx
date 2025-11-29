@@ -89,7 +89,7 @@ export default function ContactFormCard() {
 							name="firstName"
 							placeholder="Jamie"
 							required
-							wrapperClassName="w-full bg-background/60"
+							wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 							variant={errors.firstName ? "error" : "default"}
 						/>
 						<Input
@@ -97,7 +97,7 @@ export default function ContactFormCard() {
 							name="lastName"
 							placeholder="Smith"
 							required
-							wrapperClassName="w-full bg-background/60"
+							wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 							variant={errors.lastName ? "error" : "default"}
 						/>
 					</div>
@@ -107,23 +107,23 @@ export default function ContactFormCard() {
 						name="email"
 						placeholder="your@email.com"
 						required
-						wrapperClassName="w-full bg-background/60"
+						wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 						variant={errors.email ? "error" : "default"}
 					/>
 					<Input
 						label="Project or company"
 						name="subject"
 						placeholder="Tell me what you're building"
-						wrapperClassName="w-full bg-background/60"
+						wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 						variant={errors.subject ? "error" : "default"}
 					/>
 					<Textarea
-						label="Project details"
+						label="How can I help?"
 						name="message"
-						placeholder="What should we know about the project?"
+						placeholder="What problem are we solving together?"
 						rows={5}
 						required
-						wrapperClassName="w-full bg-background/60"
+						wrapperClassName="w-full bg-[color-mix(in_oklch,var(--color-background)_60%,var(--color-card)_40%)]"
 						variant={errors.message ? "error" : "default"}
 					/>
 					<FormActions align="right">
