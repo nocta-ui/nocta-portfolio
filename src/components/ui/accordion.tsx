@@ -108,7 +108,7 @@ const accordionTriggerVariants = cva(
 );
 
 const accordionContentVariants = cva(
-	"overflow-hidden transition-[height,opacity] duration-450 ease-smooth",
+	"overflow-hidden transition-[height,opacity] duration-300 ease-smooth will-change-[height,opacity]",
 	{
 		variants: {
 			size: {
